@@ -3,9 +3,19 @@ import os
 
 
 project_path = os.path.dirname(os.path.realpath(__name__))
-file_to_modify = "hosts"
+file_to_modify = "youtube-all"
 hostsfile_description = """
-! Title: b3nchas hosts files
+! Title: b3nchas hosts file with all youtube-urls
+!
+! Description: 
+! The original blocklist file come from https://github.com/jmdugan/blocklists/
+! and was modified with my python script file to make it compatible for AdGuard.
+! 
+! Project Homepage: https://github.com/b3ncha/blocklist
+! Python Script:    https://github.com/b3ncha/blocklist/AdGuarts/modhostsfile.py
+"""
+__hostsfile_description = """
+! Title: b3nchas hosts files 
 !
 ! Description: 
 ! The file was created from many blocklists with the 
