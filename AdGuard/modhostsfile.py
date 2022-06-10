@@ -3,9 +3,9 @@ import os
 
 
 project_path = os.path.dirname(os.path.realpath(__name__))
-file_to_modify = "youtube-all"
+file_to_modify = "google-all"
 hostsfile_description = """
-! Title: b3nchas hosts file with all youtube-urls
+! Title: b3nchas hosts file with all google-urls
 !
 ! Description: 
 ! The original blocklist file come from https://github.com/jmdugan/blocklists/
@@ -40,7 +40,7 @@ def mod_url(url = ""):
 
     new_url = url.split(" ")[1].replace("\n", "")         # we need only the url
 
-    return "||" + new_url + "^" + "\n"
+    return "||" + new_url + "^$important" + "\n"
 
 def filter_hosts(hosts = ""):
     """ We need only the lines with the urls but
