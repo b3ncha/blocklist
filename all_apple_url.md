@@ -1,4 +1,5 @@
 Hier entsteht eine Liste, welche Apple Apps benötigen welche URLS.
+Alle Apple IPs: https://whoisrequest.com/ip/AS714
 
 # Podcast (alles ungeklärt)
 ## Damit die App funktioniert:
@@ -7,6 +8,9 @@ Hier entsteht eine Liste, welche Apple Apps benötigen welche URLS.
 - bag.itunes.apple.com
 - init.itunes.apple.com
 - amp-api.podcasts.apple.com
+- amp-api.podcast-lb.itunes-apple.com.akadns.net
+search.itunes.apple.com
+
 
 ## ?
 - bookkeeper.itunes.itunes.apple.com
