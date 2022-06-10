@@ -2,7 +2,7 @@
 
 # blocklist
 
-1 hosts for my SmartPhone and applicatio AdGuard
+1 hosts for my SmartPhone and application AdGuard
 
 
 # Created
