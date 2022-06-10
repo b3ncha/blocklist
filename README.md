@@ -1,4 +1,4 @@
-## Status: WORK
+## Status AdGuard hosts: WORK
 
 # blocklist
 
