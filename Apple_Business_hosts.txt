@@ -1,3 +1,4 @@
+Status: In Arbeit
 Quelle: https://support.apple.com/en-us/HT210060
 Device setup
 Access to the following hosts might be required when setting up your device, or when installing, updating, or restoring the operating system.
