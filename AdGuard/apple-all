@@ -220,8 +220,10 @@
 ||ca.iadsdk.apple.com^$important
 ||configuration.ls.apple.com^$important
 ||commnat-cohort-gc.ess.apple.com^$important
+||commnat-main-gc.ess.apple.com^$important
 ||ihone-Id.apple.com^$important
 ||api.smoot.apple.com^$important
+||api-adservices.apple.com^$important
 ||setup.fe.apple-dns.net^$important
 ||ocsp2.apple.com^$important
 ||setup.icloud.com^$important
@@ -250,3 +252,7 @@
 ||cf.iadsdk.apple.com^$important
 ||gsa.apple.com^$important
 ||doh.dns.apple.com^$important
+||init.push.apple.com^$important
+||weather-data.apple.com^$important
+||pancake.apple.com^$important
+||mask-api.icloud.com^$important
