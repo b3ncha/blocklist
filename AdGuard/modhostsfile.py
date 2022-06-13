@@ -3,8 +3,8 @@ import os
 
 
 project_path = os.path.dirname(os.path.realpath(__name__))
-file_to_modify = "google-all"
-hostsfile_description = """
+file_to_modify = "hosts"
+__hostsfile_description = """
 ! Title: b3nchas hosts file with all google-urls
 !
 ! Description: 
@@ -14,8 +14,8 @@ hostsfile_description = """
 ! Project Homepage: https://github.com/b3ncha/blocklist
 ! Python Script:    https://github.com/b3ncha/blocklist/AdGuarts/modhostsfile.py
 """
-__hostsfile_description = """
-! Title: b3nchas hosts files 
+hostsfile_description = """
+! Title: Hosts contributed by b3ncha
 !
 ! Description: 
 ! The file was created from many blocklists with the 
@@ -29,8 +29,8 @@ __hostsfile_description = """
 def mod_url(url = ""):
     """ This function modifies one url entry of the hosts file
         Example:
-        Input:  0.0.0.0 google.de # Germany
-        Output: ||google.de^
+        Input:  0.0.0.0 google.de
+        Output: ||google.de^$important
 
         For more filter option see https://kb.adguard.com/en/general/how-to-create-your-own-ad-filters#for_maintainers
     """
@@ -73,6 +73,7 @@ def filter_hosts(hosts = ""):
 def main():
     print("Start to modify the hosts file.")
     current_hosts_file = project_path + "/" + file_to_modify
+    print(current_hosts_file)
     new_hosts_file = hostsfile_description + "\n"
 
     file_exists = os.path.exists(current_hosts_file)
