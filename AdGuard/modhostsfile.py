@@ -3,9 +3,9 @@ import os
 
 
 project_path = os.path.dirname(os.path.realpath(__name__))
-file_to_modify = "hosts"
-__hostsfile_description = """
-! Title: b3nchas hosts file with all google-urls
+file_to_modify = "youtube-all"
+hostsfile_description = """
+! Title: b3nchas AdGuard filter with all youtube-urls
 !
 ! Description: 
 ! The original blocklist file come from https://github.com/jmdugan/blocklists/
@@ -14,7 +14,7 @@ __hostsfile_description = """
 ! Project Homepage: https://github.com/b3ncha/blocklist
 ! Python Script:    https://github.com/b3ncha/blocklist/AdGuarts/modhostsfile.py
 """
-hostsfile_description = """
+__hostsfile_description = """
 ! Title: Hosts contributed by b3ncha
 !
 ! Description: 
@@ -38,7 +38,8 @@ def mod_url(url = ""):
         print("An empty url strings cannot be processed.")
         return None
 
-    new_url = url.split(" ")[1].replace("\n", "")         # we need only the url
+    # we need only the url
+    new_url = url.split(" ")[1].replace("\n", "")
 
     return "||" + new_url + "^$important" + "\n"
 
@@ -64,6 +65,7 @@ def filter_hosts(hosts = ""):
         new_hosts_file = ""
 
         for line in file:
+            
             if line.find("0.0.0.0") == 0:
                 new_hosts_file += mod_url(line)
 

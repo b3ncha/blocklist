@@ -1,5 +1,5 @@
 
-! Title: b3nchas hosts file with all google-urls
+! Title: b3nchas AdGuard filter with all google-urls
 !
 ! Description: 
 ! The original blocklist file come from https://github.com/jmdugan/blocklists/
@@ -94,7 +94,6 @@
 ||google.co.za^$important
 ||google.co.zm^$important
 ||google.co.zw^$important
-||google.com^$important
 ||google.com^$important
 ||google.com.af^$important
 ||google.com.ag^$important
@@ -247,7 +246,7 @@
 ||googleadservices.com^$important
 ||googleanalytics.com^$important
 ||googleapis.com^$important
-||googleapps.comWork^$important
+||googleapps.com^$important
 ||googlearth.com^$important
 ||googleblog.com^$important
 ||googlebot.com^$important
@@ -301,10 +300,18 @@
 ||waze.com^$important
 ||whatbrowser.org^$important
 ||withgoogle.com^$important
-||firebaseinstallations.googleapis.com^$important
-||app-measurement.com^$important
-||ghs.googlehosted.com^$important
-||ocsp.pki.goog^$important
-||pki-goog.l.google.com^$important
+||dns.google.com^$important
+||www.google.com^$important
+||crashlyticsreports-pa.googleapis.com^$important
 ||fonts.googleapis.com^$important
-||fonts.gstatic.com^$important
+||googleads.g.doubleclick.net^$important
+||web.facebook.com^$important
+||remain.appcpi.net^$important
+||www.google-analytics.com^$important
+||accounts.google.com^$important
+||yt3.ggpht.com^$important
+||firebase-settings.crashlytics.com^$important
+||firebaselogging-pa.googleapis.com^$important
+||firebaseinstallations.googleapis.com^$important
+||settings.crashlytics.com^$important
+||photos-ugc.l.googleusercontent.com^$important
